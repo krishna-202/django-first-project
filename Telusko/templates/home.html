@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% block content %}
+    <h1>Hi i am here to calculate sum of two numbers</h1>
+    <form class="form-group" action="result" method="post">
+      {% csrf_token %}
+      <input type="text" name="num1" placeholder="num1"><br><br>
+      <input type="text" name="num2" placeholder="num2"><br><br>
+      <input class="btn btn-primary" type="submit"  value="Submit!!">
+
+    </form>
+    {% endblock %}
+
+
+    </form>
+
+  </body>
+</html>
